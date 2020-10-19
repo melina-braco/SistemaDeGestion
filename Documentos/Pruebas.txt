@@ -1,0 +1,39 @@
++login ✓           
++registro ✓
++home ✓
++mercaderia ✓
++venta ✓
++proveedores
++clientes ✓
++ganancias ✓
++documentacion
++conversion costos
++Historial clientes
+
+
+_______________________________________________________
+- movimientos por clientes  tabla que filtra por codigo
+
+- cuenta1 / cuenta2 dividir ambientes
+
+- moneda tipo cambio
+- conversion de datos
+
+-filtros
+
+-validaciones
+
+-exepciones + msje
+
+-optimizar codigo: liberar recursos
+
+-prueba de estres
+
+-cuadno ingreso una venta busco el codigo en la tabla producto y le resto el total actual con la venta realizada
+
+
+
+
+
+
+

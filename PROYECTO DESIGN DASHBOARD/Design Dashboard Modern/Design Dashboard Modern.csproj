@@ -1,0 +1,497 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4D8BCAAC-874B-4730-B1DC-A3147345B29B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Design_Dashboard_Modern</RootNamespace>
+    <AssemblyName>Design Dashboard Modern</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>C:\Users\melin\Downloads\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>7</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Design_Dashboard_Modern.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>E8C5D87CD7088E8F65C96EB053BF1F8F876F0810</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Design Dashboard Modern_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Downloads\Design Dashboard Modern\BUNIFU UI\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PdfiumViewer, Version=2.13.0.0, Culture=neutral, PublicKeyToken=91e4789cfb0609e0, processorArchitecture=MSIL">
+      <HintPath>..\packages\PdfiumViewer.2.13.0.0\lib\net20\PdfiumViewer.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.License, Version=1.3.8.40, Culture=neutral, PublicKeyToken=b1144360237c8b3f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Spire.PDF.6.8.5\lib\net40\Spire.License.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Pdf, Version=6.8.5.0, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\Spire.PDF.6.8.5\lib\net40\Spire.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Compression.Base, Version=18.2460.0.54, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Compression.Base.18.2.0.54\lib\net46\Syncfusion.Compression.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.ExcelToPdfConverter.Base, Version=18.2460.0.54, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.ExcelToPdfConverter.WinForms.18.2.0.54\lib\net46\Syncfusion.ExcelToPdfConverter.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Licensing, Version=18.2460.0.54, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Licensing.18.2.0.54\lib\net46\Syncfusion.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Pdf.Base, Version=18.2460.0.54, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Pdf.Wpf.18.2.0.54\lib\net46\Syncfusion.Pdf.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.PdfViewer.Windows, Version=18.2460.0.54, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.PdfViewer.Windows.18.2.0.54\lib\net46\Syncfusion.PdfViewer.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Shared.Base, Version=18.2460.0.54, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Shared.Base.18.2.0.54\lib\net46\Syncfusion.Shared.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Shared.WPF, Version=18.2460.0.54, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Shared.WPF.18.2.0.54\lib\net46\Syncfusion.Shared.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.XlsIO.Base, Version=18.2460.0.54, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.XlsIO.Wpf.18.2.0.54\lib\net46\Syncfusion.XlsIO.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Linq" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Runtime.InteropServices" />
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Threading.Thread" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\Documento.cs" />
+    <Compile Include="Clases\ExportarExcel.cs" />
+    <Compile Include="Clases\GrillaEstadisticas.cs" />
+    <Compile Include="Clases\GraficoGanancia.cs" />
+    <Compile Include="Clases\IntMail.cs" />
+    <Compile Include="Clases\Query.cs" />
+    <Compile Include="Form\Mail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Mail.Designer.cs">
+      <DependentUpon>Mail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Mensaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Mensaje.Designer.cs">
+      <DependentUpon>Mensaje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Proveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Proveedor.Designer.cs">
+      <DependentUpon>Proveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Design Dashboard Modern.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Design Dashboard Modern.Designer.cs">
+      <DependentUpon>Design Dashboard Modern.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Ganancias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Ganancias.Designer.cs">
+      <DependentUpon>Ganancias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Documentacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Documentacion.Designer.cs">
+      <DependentUpon>Documentacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Clientes.Designer.cs">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Ventas.Designer.cs">
+      <DependentUpon>Ventas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Mercaderia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Mercaderia.Designer.cs">
+      <DependentUpon>Mercaderia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MigracionC1\202005121948236_init.cs" />
+    <Compile Include="MigracionC1\202005121948236_init.designer.cs">
+      <DependentUpon>202005121948236_init.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MigracionC1\202005131457552_MG1.cs" />
+    <Compile Include="MigracionC1\202005131457552_MG1.designer.cs">
+      <DependentUpon>202005131457552_MG1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MigracionC1\202005131505389_MG11.cs" />
+    <Compile Include="MigracionC1\202005131505389_MG11.designer.cs">
+      <DependentUpon>202005131505389_MG11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MigracionC1\202005181938277_MG6-campoCuit.cs" />
+    <Compile Include="MigracionC1\202005181938277_MG6-campoCuit.designer.cs">
+      <DependentUpon>202005181938277_MG6-campoCuit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MigracionC1\202005201436217_mg7-fecha.cs" />
+    <Compile Include="MigracionC1\202005201436217_mg7-fecha.designer.cs">
+      <DependentUpon>202005201436217_mg7-fecha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MigracionC1\202008171405328_MG8.cs" />
+    <Compile Include="MigracionC1\202008171405328_MG8.designer.cs">
+      <DependentUpon>202008171405328_MG8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MigracionC1\202008171451303_Initial.cs" />
+    <Compile Include="MigracionC1\202008171451303_Initial.designer.cs">
+      <DependentUpon>202008171451303_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MigracionC1\202008172023384_Initial1.cs" />
+    <Compile Include="MigracionC1\202008172023384_Initial1.designer.cs">
+      <DependentUpon>202008172023384_Initial1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MigracionC1\202008191915274_Initial2.cs" />
+    <Compile Include="MigracionC1\202008191915274_Initial2.designer.cs">
+      <DependentUpon>202008191915274_Initial2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MigracionC1\202008191933402_Initial3.cs" />
+    <Compile Include="MigracionC1\202008191933402_Initial3.designer.cs">
+      <DependentUpon>202008191933402_Initial3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MigracionC1\202008191939251_Initial4.cs" />
+    <Compile Include="MigracionC1\202008191939251_Initial4.designer.cs">
+      <DependentUpon>202008191939251_Initial4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MigracionC1\202008192035490_Initial5.cs" />
+    <Compile Include="MigracionC1\202008192035490_Initial5.designer.cs">
+      <DependentUpon>202008192035490_Initial5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MigracionC1\202008192100561_Initial6.cs" />
+    <Compile Include="MigracionC1\202008192100561_Initial6.designer.cs">
+      <DependentUpon>202008192100561_Initial6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MigracionC1\202008192151019_Initial7.cs" />
+    <Compile Include="MigracionC1\202008192151019_Initial7.designer.cs">
+      <DependentUpon>202008192151019_Initial7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MigracionC1\202008192209157_Initial8.cs" />
+    <Compile Include="MigracionC1\202008192209157_Initial8.designer.cs">
+      <DependentUpon>202008192209157_Initial8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MigracionC1\202008202236226_Initial9.cs" />
+    <Compile Include="MigracionC1\202008202236226_Initial9.designer.cs">
+      <DependentUpon>202008202236226_Initial9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MigracionC1\Configuration.cs" />
+    <Compile Include="Models\DBContext.cs" />
+    <Compile Include="Models\ModelsEmpresa.cs" />
+    <Compile Include="Models\ModelsProveedor.cs" />
+    <Compile Include="Models\ModelsCliente.cs" />
+    <Compile Include="Models\ModelsVentaItems.cs" />
+    <Compile Include="Models\ModelsVenta.cs" />
+    <Compile Include="Models\ModelsUsuario.cs" />
+    <Compile Include="Models\ModelsProducto.cs" />
+    <Compile Include="Clases\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Form\Registro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Registro.Designer.cs">
+      <DependentUpon>Registro.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form\Mail.resx">
+      <DependentUpon>Mail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Mensaje.resx">
+      <DependentUpon>Mensaje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Proveedor.resx">
+      <DependentUpon>Proveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Design Dashboard Modern.resx">
+      <DependentUpon>Design Dashboard Modern.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Ganancias.resx">
+      <DependentUpon>Ganancias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Documentacion.resx">
+      <DependentUpon>Documentacion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Clientes.resx">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Ventas.resx">
+      <DependentUpon>Ventas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Mercaderia.resx">
+      <DependentUpon>Mercaderia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MigracionC1\202005121948236_init.resx">
+      <DependentUpon>202005121948236_init.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MigracionC1\202005131457552_MG1.resx">
+      <DependentUpon>202005131457552_MG1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MigracionC1\202005131505389_MG11.resx">
+      <DependentUpon>202005131505389_MG11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MigracionC1\202005181938277_MG6-campoCuit.resx">
+      <DependentUpon>202005181938277_MG6-campoCuit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MigracionC1\202005201436217_mg7-fecha.resx">
+      <DependentUpon>202005201436217_mg7-fecha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MigracionC1\202008171405328_MG8.resx">
+      <DependentUpon>202008171405328_MG8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MigracionC1\202008171451303_Initial.resx">
+      <DependentUpon>202008171451303_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MigracionC1\202008172023384_Initial1.resx">
+      <DependentUpon>202008172023384_Initial1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MigracionC1\202008191915274_Initial2.resx">
+      <DependentUpon>202008191915274_Initial2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MigracionC1\202008191933402_Initial3.resx">
+      <DependentUpon>202008191933402_Initial3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MigracionC1\202008191939251_Initial4.resx">
+      <DependentUpon>202008191939251_Initial4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MigracionC1\202008192035490_Initial5.resx">
+      <DependentUpon>202008192035490_Initial5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MigracionC1\202008192100561_Initial6.resx">
+      <DependentUpon>202008192100561_Initial6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MigracionC1\202008192151019_Initial7.resx">
+      <DependentUpon>202008192151019_Initial7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MigracionC1\202008192209157_Initial8.resx">
+      <DependentUpon>202008192209157_Initial8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MigracionC1\202008202236226_Initial9.resx">
+      <DependentUpon>202008202236226_Initial9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Form\Registro.resx">
+      <DependentUpon>Registro.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Design Dashboard Modern_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Plantilla\Factura.xlsx" />
+    <None Include="Plantilla\Remito.xlsx" />
+    <None Include="Plantilla\_blank.pdf" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="173-1737242_computer-icons-github-information-computer-wallpaper-ico.ico">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Bunifu_UI_v1.5.3">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Design Dashboard Modern.pdb">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="itextsharp">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logo.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>
