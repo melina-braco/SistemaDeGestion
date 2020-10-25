@@ -18,3 +18,4 @@ Cuenta con los siguiente modulos
 
 -MODULO DE VENTA E ITEMS ASOCIADOS A CADA VENTA
 
+(Este proyecto es  utilizado para la empresa SUNRUSH como gestion administrativa de la misma)
